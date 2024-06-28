@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #calculator{
+            border: 1px solid rgb(57, 56, 55);
+            border-radius: 5px;
+            width:200px ;
+            background-color: rgb(255, 253, 251);
+            height: 350px;
+        
+         
+        }
+        .text{
+            margin: 10px;
+            width: 85%;
+            height: 30px;
+       
+        }
+        .button_container{
+           display: flex;
+           justify-content: center;
+           flex-wrap: wrap;
+        }
+        .button{
+            height: 40px;
+            width: 45px;
+            margin: 5px;
+            text-transform: uppercase;
+           font-size: 20px;
+           font-weight: 700;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="calculator">
+        <input type="text" class="text" readonly>
+        <div class="button_container">
+        <button class="button" onclick="a='';
+        document.querySelector('.text').value=a;">c</button>
+        <button class="button" onclick="a+=1;
+         document.querySelector('.text').value=a;
+
+        
+        ">1</button>
+        <button class="button" onclick="a+=2;
+        document.querySelector('.text').value=a;
+
+       ">2</button>
+        <button class="button" onclick="a+='+';
+        document.querySelector('.text').value=a;
+
+       ">+</button>
+        <button class="button" onclick="a+=3;
+        document.querySelector('.text').value=a;
+
+       ">3</button>
+        <button class="button" onclick="a+=4;
+        document.querySelector('.text').value=a;
+        ">4</button>
+        <button class="button"onclick="a+='-';
+        document.querySelector('.text').value=a;
+
+       ">-</button>
+        <button class="button"onclick="a+=5;
+         document.querySelector('.text').value=a;
+
+        ">5</button>
+        <button class="button"onclick="a+=6;
+        document.querySelector('.text').value=a;
+
+       ">6</button>
+        <button class="button"onclick="a+='*';
+         document.querySelector('.text').value=a;
+
+        ">*</button>
+        <button class="button"onclick="a+='7';
+        document.querySelector('.text').value=a;
+
+       ">7</button>
+        <button class="button"onclick="a+=8;
+         document.querySelector('.text').value=a;
+
+        ">8</button>
+        <button class="button"onclick="
+        let result=eval(a);
+        a=result;
+        a+='';
+        document.querySelector('.text').value=a;
+
+       ">=</button>
+        <button class="button"onclick="a+='/'
+         document.querySelector('.text').value=a; "
+        >/</button>
+        <button class="button"onclick="a+=9;
+        document.querySelector('.text').value=a;
+
+       ">9</button>
+        <button class="button"onclick="a+=0;
+         document.querySelector('.text').value=a;
+
+        ">0</button>
+        <button class="button"onclick="a+='.';
+        document.querySelector('.text').value=a;
+
+       ">.</button>
+
+        </div>
+      
+    </div>
+    <script>
+        let a='';
+        document.querySelector('.text').value=a;
+    </script>
+</body>
+</html>
